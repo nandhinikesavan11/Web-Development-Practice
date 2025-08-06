@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Times New Roman';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .card{
+            width: 280px;
+            height: 400px;
+            padding: 10px;
+            text-align: center;
+            border: 3px solid black;
+            box-shadow: 0 4px 8px rgba(8, 8, 26, 0.3);
+            border-radius: 15px;
+            transition: transform 0.5s;
+            cursor:pointer;
+            font-size:large;
+        }
+        .card:hover{
+            transform: scale(0.75);
+        }
+        .card p{
+            font-weight: bold;
+        }
+        .image{
+            height: 170px;
+            width: 170px;
+            border: 3px solid rgba(0, 0, 0, 0.63);
+            padding: 5px;
+            border-radius: 95px;
+            object-fit: cover;
+        }
+        .click{
+            background-color: rgb(62, 120, 207);
+            color: black;
+            font-weight: bold;
+            font-size: large;
+            border: none;
+            height: 40px;
+            width: 90px;
+            border-radius: 45px;
+            cursor:pointer;
+        }
+        .click:hover{
+            background-color: rgb(68, 168, 240);
+            color: rgba(3, 52, 213, 0.919); 
+            font-weight: bold;
+            font-size: large;
+            border: none;
+            height: 40px;
+            width: 90px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(51, 51, 190, 0.8);
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="image.png" class="image" alt="Photo">
+        <h2>Nandhini Kesavan</h2>
+        <p>Web Developer</p>
+        <button class="click">Click</button>
+    </div>
+</body>
+</html>
+
+
